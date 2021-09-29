@@ -1,0 +1,148 @@
+.button {
+
+    display: flex;
+    cursor: pointer;
+    min-width: 9.3rem;
+    min-height: 4.8rem;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+
+    &_primary {
+        background-color: $blue;
+        color: white;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        margin-right: 21px;
+
+        &:nth-child(n+5) {
+            margin-top: 1.8rem;
+        }
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+    }
+
+    &_secondary {
+        background-color: white;
+        color: $blue;
+        border-radius: 4px;
+        border-color: $blue;
+        border-width: 3px;
+        outline: none;
+        margin-right: 21px;
+
+        &:nth-child(n+5) {
+            margin-top: 1.8rem;
+        }
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+
+    &_tetriary {
+        border: none;
+    }
+
+    &_secondary_disabled {
+        color: $grey;
+        border-color: $grey;
+    }
+
+    &__icon_plus_secondary {
+        margin-right: 1.5rem;
+        fill: $blue;
+    }
+
+    &_primary_disabled {
+        background-color: white;
+        color: $grey;
+    }
+
+    &_primary_group {
+        margin: 0;
+    }
+
+    &_primary_group_disabled {
+        margin: 0;
+        margin-top: 2.5rem;
+    }
+
+    &__icon {
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 50%;
+        background-color: white;
+        outline: none;
+        margin-right: 2.5rem;
+
+        &:nth-child(n+2) {
+            margin-top: 1.8rem;
+        }
+    }
+
+    &__icon_enabled {
+        background-color: $blue;
+        border: none;
+    }
+
+    &__icon_disabled {
+        border: none;
+    }
+
+    &__icon_disabled_normal {
+        border-color: $grey;
+    }
+
+    &__icon_normal {
+        border-color: $blue;
+        border-width: 4px;
+    }
+
+    &__icon_borderless {
+        border: none;
+    }
+
+    &__icon_plus {
+        margin-right: 1.5rem;
+    }
+
+    &__icon_plus_full {
+        margin: 0;
+        border: none;
+        outline: none;
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    &__icon_plus_full_disabled {
+        filter: brightness(0.8);
+    }
+
+    &__icon_plus_disabled {
+        margin-right: 1.5rem;
+        filter: brightness(0.8)
+    }
+
+    &__icon_less {
+        margin-left: 1.5rem;
+    }
+
+    &__icon_less_secondary {
+        margin-left: 1.5rem;
+    }
+
+    &__icon_less_disabled {
+        margin-left: 1.5rem;
+        filter: brightness(0.8)
+    }
+
+}
