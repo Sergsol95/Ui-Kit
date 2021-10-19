@@ -1,0 +1,129 @@
+.input {
+    height: 5rem;
+    padding: 1.1rem 2rem;
+    font-size: 1.8rem;
+    color: $blue;
+    font-weight: 500;
+    position: relative;
+    border-color: $blue;
+    border-radius: 4px;
+    min-width: 29rem;
+    background-color: white;
+
+
+    &:focus {
+        border-color: $blue;
+    }
+
+    &_disabled {
+        color: $grey;
+        filter: grayscale(0.9);
+
+        &::placeholder {
+            color: $grey;
+        }
+
+    }
+
+    &_textarea {
+        min-height: 12rem;
+
+        &::placeholder {
+            color: $blue;
+        }
+    }
+
+    &_search {
+        max-width: 29.5rem;
+        padding: 1.1rem 1rem 1.1rem 4rem;
+    }
+
+    &_radio {
+        min-width: 3rem;
+        min-height: 3rem;
+        display: none;
+
+        &:checked {
+            height: 10px;
+            width: 10px;
+            color: $blue;
+            border: 10px solid white;
+        }
+    }
+
+    &_radio:checked {
+        background-color: $blue;
+    }
+
+    &_radio:checked+.text__radio::before{
+        background-color: white;
+        content: "";
+        height: 30px;
+        width: 30px;
+        border: 3px solid $blue;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    &_radio:checked+.text__radio::after {
+        display: block;
+    }
+    
+
+}
+
+.label {
+    position: absolute;
+    left: 37px;
+    top: 6px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: $blue;
+
+    &_disabled {
+        color: $grey;
+        left: 24px;
+    }
+}
+
+.title {
+    font-size: 6.9rem;
+    color: $blue;
+}
+
+.text {
+
+    &__radio {
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $blue;
+
+        &::before {
+            content: "";
+            height: 30px;
+            width: 30px;
+            border: 3px solid $blue;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        &::after {
+            content: "";
+            display: none;
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background-color: $blue;
+            border-radius: 50%;
+            left: 13px;
+        }
+    }
+
+    &__radio_disabled {
+        color: $grey;
+    }
+}
