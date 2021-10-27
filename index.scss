@@ -10,6 +10,10 @@ html {
     font-size: 10px;
 }
 
+p {
+    margin: 0
+}
+
 
 
 body {
@@ -26,3 +30,5 @@ body {
 @import "./src/styles/text.scss";
 @import "./src/styles/page.scss";
 @import "./src/styles/input.scss";
+@import "./src/styles/card.scss";
+@import "./src/styles/img.scss";

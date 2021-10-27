@@ -1,23 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <header>
-        <h1 class="title">Navigation</h1>
-    </header>
-    <section>
-        <h2></h2>
-        <div>
+    <div class="page page_nav">
+        <header>
+            <h1 class="title">Navigation</h1>
+        </header>
+        <section class="section section_toolbar">
             <img src="./src/img/less-blue.svg" alt="">
             <h2>Title</h2>
             <img src="./src/img/info.svg" alt="">
-        </div>
-    </section>
+        </section>
+        <section class="section section_breadcrumb">
+            <div class="section__text">
+                <p class="text__navigation">
+                    Home
+                </p>
+                <img src="./src/img/less-blue.svg" alt="" class="section__icon_less">
+            </div>
+            <div class="section__nav_text">
+                <div class="section__text">
+                    <p class="text__navigation"> Home</p>
+                    <img src="./src/img/less-blue.svg" alt="" class="section__icon_less">
+                    <p class="text__navigation"> Products</p>
+                </div>
+                <div class="section__text">
+                    <p class="text__navigation"> Home</p>
+                    <img src="./src/img/less-blue.svg" alt="" class="section__icon_less">
+                    <p class="text__navigation"> Products</p>
+                    <img src="./src/img/less-blue.svg" alt="" class="section__icon_less">
+                    <p class="text__navigation"> Laptop</p>
+                </div>
+                <div class="section__text">
+                    <p class="text__navigation"> Home</p>
+                    <img src="./src/img/less-blue.svg" alt="" class="section__icon_less">
+                    <p class="text__navigation"> Products</p>
+                    <img src="./src/img/less-blue.svg" alt="" class="section__icon_less">
+                    <p class="text__navigation"> Laptop</p>
+                    <img src="./src/img/less-blue.svg" alt="" class="section__icon_less">
+                    <p class="text__navigation"> Features</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section section_horinav">
+                <div class="section_horinav_split">
+                    <div class="section__bar section__bar_spaced">
+                        <div class="card card_nav">
+                            <img src="./src/img/home.svg" alt="" class="card__img">
+                            <p class="text__navigation text__active">Active</p>
+                        </div>
+                        <div class="card card_nav">
+                            <img src="./src/img/home.svg" alt="" class="card__img">
+                        </div>
+                        <div class="card card_nav card_inactive">
+                            <img src="./src/img/home-diasctive.svg" alt="" class="card__img">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                        <div class="card card_nav card_inactive">
+                            <img src="./src/img/home-diasctive.svg" alt="" class="card__img">
+                        </div>
+                    </div>
+                    <div class="section__bar section__bar_spaced">
+                        <div class="card card_nav card_border_bot">
+                            <img src="./src/img/home.svg" alt="" class="card__img">
+                            <p class="text__navigation text__active">Active</p>
+                        </div>
+                        <div class="card card_nav card_border_bot">
+                            <img src="./src/img/home.svg" alt="" class="card__img">
+                        </div>
+                        <div class="card card_nav card_border_bot card_inactive">
+                            <img src="./src/img/home-diasctive.svg" alt="" class="card__img">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                        <div class="card card_nav card_border_bot card_inactive">
+                            <img src="./src/img/home-diasctive.svg" alt="" class="card__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_horinav_wide">
+                <div class="section__bar">
+                    <div class="card card_nav">
+                        <img src="./src/img/home.svg" alt="" class="card__img">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <img src="./src/img/bullseye.svg" alt="" class="card__img">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+                <div class="section__bar">
+                    <div class="card card_nav">
+                        <img src="./src/img/home.svg" alt="" class="card__img">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <img src="./src/img/bullseye.svg" alt="" class="card__img">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <img src="./src/img/man.svg" alt="" class="card__img">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+                <div class="section__bar">
+                    <div class="card card_nav">
+                        <img src="./src/img/home.svg" alt="" class="card__img">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <img src="./src/img/bullseye.svg" alt="" class="card__img">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <img src="./src/img/man.svg" alt="" class="card__img">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <img src="./src/img/screw.svg" alt="" class="card__img">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+                <div class="section__bar">
+                    <div class="card card_nav">
+                        <img src="./src/img/home.svg" alt="" class="card__img">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <img src="./src/img/bullseye.svg" alt="" class="card__img">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <img src="./src/img/man.svg" alt="" class="card__img">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <img src="./src/img/screw.svg" alt="" class="card__img">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <img src="./src/img/i.svg" alt="" class="card__img">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="section section_tab">
+                <div class="section__bar">
+                    <div class="card card_nav">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+                <div class="section__bar">
+                    <div class="card card_nav card_border_bot">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_tab section_wide">
+                <div class="section__bar">
+                    <div class="card card_nav card_pictureless card_border_bot">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+                <div class="section__bar">
+                    <div class="card card_nav card_pictureless card_border_bot">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+                <div class="section__bar">
+                    <div class="card card_nav card_pictureless card_border_bot">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+                <div class="section__bar">
+                    <div class="card card_nav card_pictureless card_border_bot">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_bot card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_tab">
+                <div class="section__bar">
+                    <div class="card card_nav card_pictureless card_border_left">
+                        <p class="text__navigation text__active">Active</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_left card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_right">
+                        <p class="text__navigation">Active</p>
+                    </div>
+                    <div class="card card_nav card_pictureless card_border_right card_inactive">
+                        <p class="text__navigation">Inactive</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_tab section_tab_vertical">
+                <div class="section_wide">
+                    <div class="section__bar section__bar_vertical">
+                        <div class="card card_nav card_pictureless card_border_right">
+                            <p class="text__navigation text__active">Active</p>
+                        </div>
+                        <div class="card card_nav card_pictureless card_border_right card_inactive">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                    </div>
+                    <div class="section__bar section__bar_vertical">
+                        <div class="card card_nav card_pictureless card_border_right">
+                            <p class="text__navigation text__active">Active</p>
+                        </div>
+                        <div class="card card_nav card_pictureless card_border_right card_inactive">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                        <div class="card card_nav card_pictureless card_border_right card_inactive">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                        <div class="card card_nav card_pictureless card_border_right card_inactive">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_wide">
+                    <div class="section__bar section__bar_vertical">
+                        <div class="card card_nav card_pictureless card_border_right">
+                            <p class="text__navigation text__active">Active</p>
+                        </div>
+                        <div class="card card_nav card_pictureless card_border_right card_inactive">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                        <div class="card card_nav card_pictureless card_border_right card_inactive">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                    </div>
+                    <div class="section__bar section__bar_vertical">
+                        <div class="card card_nav card_pictureless card_border_right">
+                            <p class="text__navigation text__active">Active</p>
+                        </div>
+                        <div class="card card_nav card_pictureless card_border_right card_inactive">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                        <div class="card card_nav card_pictureless card_border_right card_inactive">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                        <div class="card card_nav card_pictureless card_border_right card_inactive">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                        <div class="card card_nav card_pictureless card_border_right card_inactive">
+                            <p class="text__navigation">Inactive</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section section_dropdown">
+                <div class="section_dropdown_item">
+                    <img src="./src/img/plus-blue.svg" alt="" class="img img_dropdown_plus">
+                    <p class="text__navigation">Menu Item</p>
+                </div>
+                <div class="section_dropdown_item">
+                    <p class="text__navigation">Menu Item</p>
+                    <img src="./src/img/less-blue.svg" alt="" class="img img_dropdown_less">
+                </div>
+                <div class="section_dropdown_item">
+                    <img src="./src/img/plus-inactive.svg" alt="" class="img img_dropdown_plus">
+                    <p class="text__navigation text_inactive">Menu Item</p>
+                </div>
+                <div class="section_dropdown_item">
+                    <p class="text__navigation text_inactive">Menu Item</p>
+                    <img src="./src/img/less-inactive.svg" alt="" class="img img_dropdown_less">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section section_borderless section_dropdown">
+                <div class="section_dropdown_item">
+                    <img src="./src/img/plus-blue.svg" alt="" class="img img_dropdown_plus">
+                    <p class="text__navigation">Menu Item</p>
+                </div>
+                <div class="section_dropdown_item">
+                    <p class="text__navigation">Menu Item</p>
+                    <img src="./src/img/less-blue.svg" alt="" class="img img_dropdown_less">
+                </div>
+                <div class="section_dropdown_item">
+                    <img src="./src/img/plus-inactive.svg" alt="" class="img img_dropdown_plus">
+                    <p class="text__navigation text_inactive">Menu Item</p>
+                </div>
+            </div>
+        </section>
+        <section class="section section_list">
+            <div>
+                <div class="card card_list">
+                    <img src="./src/img/people.svg" alt="" class="img img_people">
+                    <div class="card__list_item">
+                        <h3 class="title__third">First line</h3>
+                        <p class="text">Second line</p>
+                    </div>
+                    <img src="./src/img/less-blue.svg" alt="">
+                </div>
+                <div class="card card_list">
+                    <img src="./src/img/people.svg" alt="" class="img img_people">
+                    <div class="card__list_item">
+                        <h3 class="title__third">First line</h3>
+                        <p class="text">Second line</p>
+                    </div>
+                </div>
+                <div class="card card_list">
+                    <div class="card__list_item">
+                        <h3 class="title__third">First line</h3>
+                        <p class="text">Second line</p>
+                    </div>
+                    <img src="./src/img/less-blue.svg" alt="">
+                </div>
+                <div class="card card_list">
+                    <div class="card__list_item">
+                        <h3 class="title__third">First line</h3>
+                        <p class="text">Second line</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,50 @@
+.card {
+    min-width: 11.2rem;
+    min-height: 7.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid $violet;
+
+    &_list {
+        border: none;
+        flex-direction: row;
+        padding: 1.6rem;
+        justify-content: start;
+        min-width: 35.2rem;
+    }
+
+    &__list_item {
+        width: 100%;
+    }
+
+    &__img {
+        margin-bottom: 5px;
+    }
+
+    &_inactive {
+        border-color: $grey;
+    }
+
+    &_border_bot {
+        border-top: none;
+        border-bottom: 3px solid $violet;
+    }
+
+    &_border_right {
+        border-top: none;
+        border-right: 3px solid $violet;
+    }
+
+    &_border_left {
+        border-top: none;
+        border-left: 3px solid $violet;
+    }
+
+    &_pictureless {
+        min-width: 8.1rem;
+        min-height: 4.8rem;
+        padding: 12px 15px;
+    }
+}

@@ -1,9 +1,19 @@
 .title {
     font-size: 6.9rem;
     color: $blue;
+
+    &__third {
+        font-size: 1.8rem;
+        color: $blue;
+        margin: 0;
+    }
 }
 
 .text {
+
+    font-size: 1.6rem;
+    color: $blue;
+    margin: 0;
 
     &__radio {
         display: flex;
@@ -24,6 +34,20 @@
     }
 
     &__radio_disabled {
+        color: $grey;
+    }
+
+    &__navigation {
+        color: $blue;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    &__active {
+        color: $violet;
+    }
+
+    &_inactive {
         color: $grey;
     }
 }

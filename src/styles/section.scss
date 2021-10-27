@@ -5,6 +5,7 @@
     border-color: $blue;
     border-width: 2px;
     border-radius: 5px;
+    width: fit-content;
 
 
     &__buttons {
@@ -28,6 +29,10 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    &_shadowed {
+        box-shadow: 14px 5px 40px rgb(0 0 0 / 10%);
     }
 
 
@@ -66,12 +71,73 @@
         top: 30px;
     }
 
+    &__icon_less {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 
+    &__nav_text {
+        padding: 1.6rem;
+        border-style: dashed;
+        border-color: $blue;
+        border-width: 2px;
+        border-radius: 5px;
+        max-width: 34.5rem;
+
+    }
+
+
+    &_horinav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1.6rem;
+        max-width: 52.8rem;
+        width: 100%;
+    }
+
+    &_horinav_wide {
+        padding: 1.6rem;
+    }
+
+    &_tab {
+        padding: 1.6rem;
+    }
+
+    &_horinav_split {
+        flex: auto;
+    }
+
+    &_wide {
+        width: 100%;
+    }
+
+    &_tab_vertical {
+        display: flex;
+        width: 100%;
+    }
+
+    &__bar {
+        display: flex;
+        margin-top: 1.6rem;
+
+        &_spaced {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &:first-child {
+            margin: 0;
+        }
+
+        &_vertical {
+            flex-direction: column;
+        }
+    }
 
     &_inputs {
         display: flex;
         flex-wrap: wrap;
-
     }
 
     &__input {
@@ -88,6 +154,14 @@
         flex-wrap: wrap;
     }
 
+    &_toolbar {
+        border: none;
+        display: flex;
+        max-width: 38.5rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     &__input_radio {
         display: flex;
         align-items: center;
@@ -96,16 +170,46 @@
             padding: 1.5rem 1.5rem 1.5rem 1.5rem;
         }
 
-        &:checked {
-            height: 10px;
-            width: 10px;
-            color: $blue;
-            border: 10px solid white;
+    }
+
+    &__input_radio:checked+&_inputs_radio {
+        max-width: 26.2rem;
+
+    }
+
+    &__text {
+        display: flex;
+        margin-bottom: 1.6rem;
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 
-    &_inputs_radio {
-        max-width: 26.2rem;
+    &_borderless {
+        border: none;
+        padding: 2.4rem 4rem;
+    }
 
+    &_dropdown {
+        padding: 1.6rem;
+        min-width: 14.2rem;
+
+        &_item {
+            display: flex;
+            margin-bottom: 2.8rem;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    &_breadcrumb {
+        border: none;
+    }
+
+    &_pager {
+        border: none;
     }
 }
